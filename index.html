@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Coupled Confusion Correction: Learning from Crowds with Sparse Annotations">
+  <meta name="keywords" content="Dataset Distillation">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Coupled Confusion Correction: Learning from Crowds with Sparse Annotations</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/logo.png">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+  
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="">
+      </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="https://ahmadsajedii.github.io/ProbMCL/">
+            ProbMCL
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Coupled Confusion Correction: Learning from Crowds with Sparse Annotations</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://hansong-zhang.github.io/">Hansong Zhang</a><sup>1, 2</sup> </span>&nbsp;&nbsp;
+            <span class="author-block">
+              <a href="https://imsg.ac.cn/people/lishikun.html">Shikun Li</a><sup>1, 2</sup> </span>&nbsp;&nbsp;
+            <span class="author-block">
+              <a href="https://imsg.ac.cn/people/wangpengju.html">Dan Zeng</a><sup>3</sup>&nbsp;&nbsp;
+            </span>
+            <span class="author-block">
+              <a href="https://scie.shu.edu.cn/Prof/zengdan.htm">Chenggang Yan</a><sup>4</sup>&nbsp;&nbsp;
+            </span>
+            <span class="author-block">
+              <a href="https://imsg.ac.cn/people/geshiming.html">Shiming Ge</a><sup>1, 2, 😎</sup>&nbsp;&nbsp;
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Institute of Information Engineering, Chinese Academy of Sciences </span>&nbsp;&nbsp;
+            <span class="author-block"><sup>2</sup>University of Chinese Academy of Sciences </span>
+            <span class="author-block"><sup>3</sup>Shanghai University </span>
+            <span class="author-block"><sup>4</sup>Hangzhou Dianzi University </span>
+          </div>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">😎 Corresponding Author </span>
+          </div>
+          <div class="column has-text-centered">
+            <div class="publication-links">
+
+              <!-- PDF Link. -->
+
+              <!-- <span class="link-block">
+              <a href="https://arxiv.org/pdf/2011.12948"
+                 class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                    <i class="fas fa-file-pdf"></i>
+                </span>
+                <span>Paper</span>
+              </a>
+            </span> -->
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2312.07331" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/Hansong-Zhang/CCC"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                </a>
+              </span>
+              <!-- Dataset Link. -->
+              <!-- <span class="link-block">
+                <a href="https://drive.google.com/drive/folders/1kZlYgiVrmFEz0OUyxnww3II7FBPQe7W0"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="far fa-images"></i>
+                  </span>
+                  <span>Distilled Datasets</span>
+                </a>
+              </span> -->
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Overview</h2>
+        <div class="content has-text-justified">
+          <p>
+            As the size of the datasets getting larger, accurately annotating such datasets is becoming more impractical due to the expensiveness on both time and economy. Therefore, crowd-sourcing has been widely adopted to alleviate the cost of collecting labels, which also inevitably introduces label noise and eventually degrades the performance of the model. To learn from crowd-sourcing annotations, modeling the expertise of each annotator is a common but challenging paradigm, because the annotations collected by crowd-sourcing are usually highly-sparse. To alleviate this problem, we propose Coupled Confusion Correction (CCC), where two models are simultaneously trained to correct the confusion matrices learned by each other. Via bi-level optimization, the confusion matrices learned by one model can be corrected by the distilled data from the other. Moreover, we cluster the ``annotator groups'' who share similar expertise so that their confusion matrices could be corrected together. In this way, the expertise of the annotators, especially of those who provide seldom labels, could be better captured. Remarkably, we point out that the annotation sparsity not only means the average number of labels is low, but also there are always some annotators who provide very few labels, which is neglected by previous works when constructing synthetic crowd-sourcing annotations. Based on that, we propose to use Beta distribution to control the generation of the crowd-sourcing labels so that the synthetic annotations could be more consistent with the real-world ones. Extensive experiments are conducted on two types of synthetic datasets and three real-world datasets, the results of which demonstrate that CCC significantly outperforms state-of-the-art approaches.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+    <!-- Paper video. -->
+    <!-- <div class="columns is-centered has-text-centered">
+    <div class="column is-four-fifths">
+      <h2 class="title is-3">Video</h2>
+      <div class="publication-video">
+        <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
+                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div> -->
+    <!--/ Paper video. -->
+  </div>
+</section>
+
+
+<!-- Method -->
+<section class="section">
+  <div class="container">
+<div class="columns is-centered">
+  <div class="container is-max-desktop content">
+    <h2 class="title is-3">Motivation and Findings</h2>
+
+    <div class="content has-text-justified">
+      <p>
+        Previous crowd-sourcing methods synthesize labels with a evenly distributed label numbers, which is not consistent with real-world ones. To address this, 
+        we proposed to unbalance the label numbers with a Beta distribution.
+      </p>
+      <p>
+        <img src="./static/images/nb_labels.png" id="intro" />
+      </p>
+      <p>
+        Framework of CCC:
+      </p>
+      <p>
+        <img src="./static/images/framework.png" id="framework" />
+      </p>
+    </div>
+  </div>
+</div>
+  </div>
+</section>
+<!-- End Method --> 
+
+
+    <!-- Paper video. -->
+    <!--/ Paper video. -->
+  </div>
+</section>
+
+  <!-- Paper poster -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title">Poster</h2>
+
+      <iframe  src="static/images/poster_AAAI24.pdf" width="100%" height="550">
+          </iframe>
+        
+      </div>
+    </div>
+  </section>
+<!--End paper poster -->
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@inproceedings{zhang2024ccc,
+      title    ={Coupled Confusion Correction: Learning from Crowds with Sparse Annotations}, 
+      author   ={Hansong Zhang and Shikun Li and Dan Zeng and Chenggang Yan and Shiming Ge},
+      year     ={2024},
+      booktitle={The 38th Annual AAAI Conference on Artificial Intelligence (AAAI)}
+      }
+  </code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+         href="https://arxiv.org/abs/2310.00093">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https://github.com/DataDistillation/DataDAM" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            This means you are free to borrow the <a
+              href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
+            we just ask that you link back to this page in the footer.
+            Please remember to remove the analytics code included in the header of the website which
+            you do not want on your website.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
