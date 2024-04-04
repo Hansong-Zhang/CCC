@@ -10,9 +10,12 @@ We provide the training codes of [CIFAR-10N](http://www.noisylabels.com/) datase
 1. Create the environment using requirements.yaml
 ```
 conda create --name env_ccc --file requirements.yaml
+```
+2. Activate the environment
+```
 conda activate env_ccc
 ```
-2. Training CIFAR-10N
+3. Training CIFAR-10N
 ```
 python train_ccc.py --dataset=cifar10n --data_path=<path to cifar10 data>
 ```
