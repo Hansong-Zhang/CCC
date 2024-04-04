@@ -9,7 +9,8 @@ As the size of the datasets getting larger, accurately annotating such datasets 
 We provide the training codes of [CIFAR-10N](http://www.noisylabels.com/) dataset.
 1. Create the environment using requirements.yaml
 ```
-conda env --create --name env_ccc --file requirements.yaml
+conda create --name env_ccc --file requirements.yaml
+conda activate env_ccc
 ```
 2. Training CIFAR-10N
 ```
