@@ -195,13 +195,13 @@ def main(args):
         # print("CM_CCC_range of model 1: {:.4f} to {:.4f}".format(torch.min(CM_CCC_2), torch.max(CM_CCC_2)))
         print('|==================================================================|\n\n')
 
-    if args.epochs_ft > 0:
+    if args.epoch_ft > 0:
         eval_loss_1, eval_loss_2, eval_acc_mean = eval_mean(model_1, model_2, loader_test, criterion, args.device)
         print('State Before Fine-Tuning:\n'
         'Test Loss   : {:.4f} | {:.4f}\n'
         'Test Acc    : {:.2f}'.format(eval_loss_1, eval_loss_2, eval_acc_mean))
 
-        for e_ft in range(args.epochs_ft):
+        for e_ft in range(args.epoch_ft):
             '''fine-tune each other'''
             print("Fine-tuning model_1...")
             finetune(args, model_1, meta_loader_2)
